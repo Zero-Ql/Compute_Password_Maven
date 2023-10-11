@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fun.zero.li</groupId>
+    <artifactId>Compute_Password_Maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--               <id>package</id> -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>org.example.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+<!--            <plugin>-->
+<!--                <artifactId>maven-plugins</artifactId>-->
+<!--                <configuration>-->
+<!--                    <includeSystemScope>true</includeSystemScope>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-assembly-plugin</artifactId>-->
+<!--                <version>2.4.1</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;打包时，包含所有依赖的jar包&ndash;&gt;-->
+<!--                    <descriptorRefs>-->
+<!--                        <descriptorRef>jar-with-dependencies</descriptorRef>-->
+<!--                    </descriptorRefs>-->
+<!--                    <archive>-->
+<!--                        <manifest>-->
+<!--                            <addClasspath>true</addClasspath>-->
+<!--                            <mainClass>org.example.Main</mainClass>-->
+<!--                        </manifest>-->
+<!--                    </archive>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>make-assembly</id>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>single</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+        </plugins>
+    </build>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.logging.log4j</groupId>-->
+<!--            <artifactId>log4j-core</artifactId>-->
+<!--            <version>2.20.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>log4j</groupId>-->
+<!--            <artifactId>log4j</artifactId>-->
+<!--            <version>1.2.12</version>-->
+<!--            <scope>system</scope>-->
+<!--            <systemPath>${pom.basedir}/src/main/resources/lib/log4j-1.2.12.jar</systemPath>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>4.13.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+    </dependencies>
+</project>
